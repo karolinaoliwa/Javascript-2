@@ -1,13 +1,19 @@
-function drawTree(height) {
-    for(var i=1; i<=height; i++) {
-        
-            for(var j=1; j<=i; j++) {
-            
-                var star=" ";
-            }
-            console.log(star);
-        }
+function drawTree(n) {
     
-}
-drawTree(10);
-
+       for (i = 1; i <= n; i++)
+       { 
+           for (j = i; j < n; j++)
+           {
+               document.write("");
+           }
+           for (j = 1; j <= (2*i-1); j++)
+           {
+               document.write("*");
+           }
+    
+               document.write("<br>");
+   
+           }
+   
+       }
+   drawTree(10);
