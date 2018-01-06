@@ -1,19 +1,10 @@
-function drawTree(n) {
-    
-       for (i = 1; i <= n; i++)
-       { 
-           for (j = i; j < n; j++)
-           {
-               document.write("");
-           }
-           for (j = 1; j <= (2*i-1); j++)
-           {
-               document.write("*");
-           }
-    
-               document.write("<br>");
-   
-           }
-   
-       }
-   drawTree(10);
+function drawTree (n) {
+	for (var i = 0; i < n; i++) {
+		var star = '';
+		for (var j = 0; j <= i; j++) {
+			 star +=  '*';
+		}
+		console.log(star);
+	}
+}
+drawTree(10);
