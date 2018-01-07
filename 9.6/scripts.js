@@ -1,10 +1,8 @@
-function drawTree (n) {
-	for (var i = 0; i < n; i++) {
-		var star = '';
-		for (var j = 0; j <= i; j++) {
-			 star +=  '*';
-		}
-		console.log(star);
-	}
+var list = document.getElementById("list");
+console.log(list);
+
+function changeText1() {
+    var centry = document.createElement("li");
+    entry.appendChild(document.createTextNode("item " + document.getElementsByTagName('li').length));
+    list.appendChild(entry);
 }
-drawTree(10);
