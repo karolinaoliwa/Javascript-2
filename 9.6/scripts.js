@@ -1,8 +1,8 @@
-var list = document.getElementById("list");
-console.log(list);
+var list = document.getElementById('list');
+	element = list.getElementsByTagName('li');
+	add = document.getElementById('addElement');
 
-function changeText1() {
-    var centry = document.createElement("li");
-    entry.appendChild(document.createTextNode("item " + document.getElementsByTagName('li').length));
-    list.appendChild(entry);
-}
+
+add.addEventListener('click', function() {
+list.innerHTML += '<li>item' + element.length + '</li>';
+});
